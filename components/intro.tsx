@@ -73,14 +73,10 @@ export default function Intro() {
         <p className="p-4 text-xl text-center">
           {' '}
           Thinking through problems in life & business, Designing interfaces
-          with attention to details, and Build accessible, inclusive products
-          and digital experiences for the web.
+          with attention to details, and Build accessible, inclusive products &
+          digital experiences for the web.
         </p>
       </motion.h1>
-      {/* I’m Brian, a
-          Designer, Software Developer and Techpreneur based in Burundi. I’m the
-          founder and CEO of Bluetec, where we build accessible, inclusive
-          products and digital experiences for the web. */}
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
