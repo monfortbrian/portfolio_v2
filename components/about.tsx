@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
+import React from 'react';
+import SectionHeading from './section-heading';
+import { motion } from 'framer-motion';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView('About');
 
   return (
     <motion.section
@@ -18,31 +18,36 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+      <p className="mb-3 text-left">
+        👋 I'm <span className="font-medium">Monfort N. Brian</span>. I live in
+        Burundi - Rwanda , where I design and build the future. <br />
+        I’ve loved making things for as long as I can remember, and wrote my
+        name using <span className="italic">WordArt MS Word-98</span> when I was{' '}
+        <span className="underline ">8 years old</span>, just months after my
+        uncle bought a brand new desktop that I taught myself to type on. It was
+        indeed an exciting time.
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <p className="mb-3 text-left">
+        I'm a <span className="font-medium">Software developer</span> turned{' '}
+        <span className="font-medium">freelancer</span> turned{' '}
+        <span className="font-medium">tech startups owner</span>. I love working
+        with UX and my main focus is how to better improve the experience for
+        different kinds of people. I love working with Javascript
+        ecosystem/Jamstack tech and, on occasion, creating new designs (when
+        time allows). My real strength, though, is figuring out better ways and
+        bridging gaps teams, customers, and everyone else. I'm a methodical,
+        logical thinker and I'm constantly looking for force multiplier
+        opportunities to help others provide their best results too. I'm
+        passionate about creating a better environment for everyone, and
+        creating <span className="font-medium">Bluetec</span> is a continuation
+        of that goal.
+      </p>
+
+      <p className="mb-3 text-left">
+        When I'm not in front of the computer, I'm usually minding my own
+        business, going out or traveling with friends, or contemplating nature
+        while sipping a craft beer. craft beer
       </p>
     </motion.section>
   );

@@ -1,107 +1,108 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+import { LuGraduationCap } from 'react-icons/lu';
+import corpcommentImg from '@/public/corpcomment.png';
+import rmtdevImg from '@/public/rmtdev.png';
+import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'About',
+    hash: '#about',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'Projects',
+    hash: '#projects',
+  },
+
+  {
+    name: 'Experience',
+    hash: '#experience',
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '#contact',
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: 'Founder & Engineering Lead',
+    location: 'Bluetec - Burundi',
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      'Full-stack dev and leading a team building web & mobile apps and custom software solutions; providing tech consulting and development.',
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: 'Jul 2020 - Present',
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: 'UI/UX Designer',
+    location: 'Health & Wellness F. - United States',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      'Full-stack dev and leading a team building web & mobile apps and custom software solutions; providing tech consulting and development.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Feb 2022 - June 2022',
+  },
+  {
+    title: 'Project Manager & Full Stack Developer',
+    location: 'Mediabox - Burundi',
+    description:
+      'At Mediabox, I provided strategic technology advice to achieve goals, designed and implemented workflows, handled junior engineer training and development, provided escalated support, and assisted in overall workplace management.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Jan 2020 - Dec 2020',
+  },
+  {
+    title: 'UX & Front-End Developer',
+    location: 'DAGUAN Computer Co., ltd - China',
+    description:
+      'As a recent graduate, I designed, developed and managed systems for clients, building new features and optimizing for user experience, speed and scalability.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Feb 2019 - Oct 2019',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: 'Agtech Dashboard',
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      'They connect farmers to markets. it allows managers to view farmer, visualize market data & trends, and optimize operations.',
+    tags: ['React', 'scss', 'MongoDB', 'JS'],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: 'NeoBank Website',
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      'Modern website for NeoBank. Responsive design - Adaptive site provides optimal viewing and navigation on any device.',
+    tags: ['React', 'Next.js', 'Tailwind', 'vite', 'JS'],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: 'Real Estate Platform',
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      'A one-stop real estate marketplace for rental listings, home sales, and seamless transactions. For renters, buyers, landlords, and agents.',
+    tags: ['React', 'Next.js', 'Chakra.ui', 'Axios', 'Framer motion', 'js'],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: 'Rebook Landing page',
+    description:
+      'A top notch landing page for sneakers. Bold, stylish aesthetics - Striking visuals reflect the energy and attitude of the brand.',
+    tags: ['React', 'Next.js', 'Tailwind', 'vite', 'js'],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  'JavaScript(ES6+)',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Typescript',
+  'CSS',
+  'MongoDB',
+  'Tailwind',
+  'Framer Motion',
+  'Git',
+  'GraphQL',
+  'Python',
 ] as const;
