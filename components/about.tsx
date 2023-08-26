@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3 text-left">
         👋 I'm <span className="font-medium">Monfort N. Brian</span>. I live in
-        Burundi - Rwanda , where I design and build the future. <br />
+        East Africa , where I design and build the future. <br />
         I’ve loved making things for as long as I can remember, and wrote my
         name using <span className="italic">WordArt MS Word-98</span> when I was{' '}
         <span className="underline ">8 years old</span>, just months after my
