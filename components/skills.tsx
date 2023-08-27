@@ -6,6 +6,10 @@ import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 
+import Link from 'next/link';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -19,8 +23,10 @@ const fadeInAnimationVariants = {
     },
   }),
 };
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Skills() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   // const { ref } = useSectionInView('');
 
   return (

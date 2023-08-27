@@ -8,6 +8,10 @@ import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
   {
+    name: '',
+    hash: '#',
+  },
+  {
     name: 'About',
     hash: '#about',
   },
@@ -29,7 +33,7 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Founder & Engineering Lead',
-    location: 'Bluetec - Burundi',
+    location: 'Bluetec - Remote',
     description:
       'Full-stack dev and leading a team building web & mobile apps and custom software solutions; providing tech consulting and development.',
     icon: React.createElement(CgWorkAlt),

@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
+  FaBehance,
 } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
@@ -89,57 +90,45 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        {/* <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection('Contact');
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{' '}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        <div className="flex">
+          <a
+            className=" text-gray-700 hover:text-gray-950 flex mx-2 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:text-white/60"
+            href="https://www.twitter.com/monfortbrian"
+            target="_blank"
+          >
+            <FaTwitter />
+          </a>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
-        >
-          Download CV{' '}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a> */}
-
-        <a
-          className=" text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:bg-white/10 dark:text-white/60"
-          href="https://www.twitter.com/monfortbrian"
-          target="_blank"
-        >
-          <FaTwitter />
-        </a>
-
-        <a
-          className=" text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:bg-white/10 dark:text-white/60"
+          {/* <a
+          className=" text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:text-white/60"
           href="https://www.instagram.com/monfortbrian_/"
           target="_blank"
         >
           <FaInstagram />
-        </a>
-        <a
-          className=" text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer  dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/briannkuru/"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
+        </a> */}
+          <a
+            className=" text-gray-700 hover:text-gray-950 flex mx-2 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:text-white/60"
+            href="https://www.linkedin.com/in/briannkuru/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
 
-        <a
-          className=" text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer  dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/monfortbrian"
-          target="_blank"
-        >
-          <FaGithub />
-        </a>
+          <a
+            className=" text-gray-700 flex mx-2 items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:text-white/60"
+            href="https://github.com/monfortbrian"
+            target="_blank"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className=" text-gray-700 flex mx-2 items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:text-white/60"
+            href="https://www.behance.net/monfortbrian"
+            target="_blank"
+          >
+            <FaBehance />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
