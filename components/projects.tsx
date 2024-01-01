@@ -1,12 +1,9 @@
-'use client';
-// Projects component
+"use client";
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data';
 import Project from './project';
-import ProjectDetails from './project-details';
-import ProjectDetailsModal from './product-details-modal';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 
@@ -32,35 +29,9 @@ const filterOptions = [
 
 export default function Projects() {
   const [filteredProjects, setFilteredProjects] = useState(projectsData);
+  
   const [selectedFilter, setSelectedFilter] = useState('');
   const { ref } = useSectionInView('Projects', 0.5);
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  const handleFilterChange = () => {
-    const filtered = projectsData.filter(
-      (project) => project.category === selectedFilter || selectedFilter === ''
-    );
-    setFilteredProjects(filtered);
-  };
-
-  useEffect(() => {
-    handleFilterChange();
-  }, [selectedFilter]);
-
-  const handleProjectClick = (project: Project) => {
-    setSelectedProject(project);
-  };
-
-  const [isOpenModal, setIsOpenModal] = useState(false);
-
-  const handleModalOpen = (project: Project) => {
-    setIsOpenModal(true);
-    setSelectedProject(project); // Set selectedProject when opening modal
-  };
-
-  const handleModalClose = () => {
-    setIsOpenModal(false);
-  };
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
@@ -69,42 +40,18 @@ export default function Projects() {
         {filterOptions.map((option) => (
           <motion.button
             key={option.value}
-            whileHover={{ scale: 1.05 }} // Scale slightly on hover
+            whileHover={{ scale: 1.05 }}
             className={clsx(
               'hover:text-gray-950 transition dark:text-white dark:hover:text-gray-300 px-6 py-2 mb-8 rounded-full font-medium transition-all duration-300 ease-in-out',
-              {
-                'bg-gray-500 text-white': option.value === selectedFilter, // Active state
-              }
+              { 'bg-gray-500 text-white': option.value === selectedFilter }
             )}
-            onClick={() => {
-              setSelectedFilter(option.value);
-            }}
+            onClick={() => setSelectedFilter(option.value)}
           >
             {option.label}
           </motion.button>
         ))}
       </div>
-
-      {isOpenModal ? (
-        <ProjectDetailsModal
-          project={selectedProject}
-          onClose={handleModalClose}
-        />
-      ) : (
-        <div>
-          {filteredProjects.map((project) => (
-            <Project
-              key={project.id}
-              {...project}
-              //onClick={() => handleModalOpen(project)}
-              onClick={() => {
-                setSelectedProject(project); // Set the selected project
-                setIsOpenModal(true); // Open the modal
-              }}
-            />
-          ))}
-        </div>
-      )}
+      
     </section>
   );
 }
