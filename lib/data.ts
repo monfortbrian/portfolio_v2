@@ -73,6 +73,7 @@ export const projectsData = [
     tags: ['React', 'scss', 'MongoDB', 'JS'],
     category: 'agtech',
     imageUrl: shorakonnect,
+    link: 'www.google.com'
   },
   {
     title: 'NeoBank Website',
@@ -81,6 +82,7 @@ export const projectsData = [
     tags: ['React', 'Next.js', 'Tailwind', 'vite', 'JS'],
     category: 'agtech',
     imageUrl: holdings,
+    link: 'www.google.com'
   },
   {
     title: 'Real Estate Platform',
@@ -89,6 +91,7 @@ export const projectsData = [
     tags: ['React', 'Next.js', 'Chakra.ui', 'Axios', 'Framer motion', 'js'],
     category: 'design',
     imageUrl: holdingsImg,
+    link: 'www.twitter.com'
   },
   {
     title: 'Rebook Landing page',
@@ -97,6 +100,7 @@ export const projectsData = [
     tags: ['React', 'Next.js', 'Tailwind', 'vite', 'js'],
     category: 'design',
     imageUrl: wordanalyticsImg,
+    link: 'www.facebook.com'
   },
 ] as const;
 

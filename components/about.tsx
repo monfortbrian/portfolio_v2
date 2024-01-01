@@ -12,7 +12,7 @@ import { HiDownload } from 'react-icons/hi';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function About() {
-  const { ref } = useSectionInView('');
+  const { ref } = useSectionInView("About");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <motion.section
