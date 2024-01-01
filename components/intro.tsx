@@ -68,7 +68,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="p-4 font-bold text-left">
-          UX Designer, & Full-Stack Developer
+          Product Designer & Web Dev.
         </span>{' '}
         <br />
         <p className="p-4 text-xl text-center">
@@ -93,7 +93,7 @@ export default function Intro() {
         <div className="flex">
           <a
             className=" text-gray-700 hover:text-gray-950 flex mx-2 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:text-white/60"
-            href="https://www.twitter.com/monfortbrian"
+            href="https://www.twitter.com/monfortbrian_"
             target="_blank"
           >
             <FaTwitter />

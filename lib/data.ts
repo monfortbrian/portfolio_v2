@@ -3,14 +3,14 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import corpcommentImg from '@/public/corpcomment.png';
+import shorakonnect from '@/public/Shora konnect..png';
+import holdings from '@/public/Holding MS.png';
+import holdingsImg from '@/public/Holding MS..png';
 import rmtdevImg from '@/public/rmtdev.png';
 import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
-  {
-    name: '',
-    hash: '#',
-  },
+
   {
     name: 'About',
     hash: '#about',
@@ -71,27 +71,31 @@ export const projectsData = [
     description:
       'They connect farmers to markets. it allows managers to view farmer, visualize market data & trends, and optimize operations.',
     tags: ['React', 'scss', 'MongoDB', 'JS'],
-    imageUrl: corpcommentImg,
+    category: 'agtech',
+    imageUrl: shorakonnect,
   },
   {
     title: 'NeoBank Website',
     description:
       'Modern website for NeoBank. Responsive design - Adaptive site provides optimal viewing and navigation on any device.',
     tags: ['React', 'Next.js', 'Tailwind', 'vite', 'JS'],
-    imageUrl: rmtdevImg,
+    category: 'agtech',
+    imageUrl: holdings,
   },
   {
     title: 'Real Estate Platform',
     description:
       'A one-stop real estate marketplace for rental listings, home sales, and seamless transactions. For renters, buyers, landlords, and agents.',
     tags: ['React', 'Next.js', 'Chakra.ui', 'Axios', 'Framer motion', 'js'],
-    imageUrl: wordanalyticsImg,
+    category: 'design',
+    imageUrl: holdingsImg,
   },
   {
     title: 'Rebook Landing page',
     description:
       'A top notch landing page for sneakers. Bold, stylish aesthetics - Striking visuals reflect the energy and attitude of the brand.',
     tags: ['React', 'Next.js', 'Tailwind', 'vite', 'js'],
+    category: 'design',
     imageUrl: wordanalyticsImg,
   },
 ] as const;

@@ -8,6 +8,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
+  id, // Access the id prop
   title,
   description,
   tags,
@@ -36,6 +37,7 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -47,7 +49,6 @@ export default function Project({
             ))}
           </ul>
         </div>
-
         <Image
           src={imageUrl}
           alt="Project I worked on"
