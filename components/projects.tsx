@@ -23,8 +23,8 @@ const fadeInAnimationVariants = {
 
 const filterOptions = [
   { label: 'All Projects', value: '' },
-  { label: 'Product Design', value: 'agtech' },
-  { label: 'No-Code & Code Development', value: 'web-development' },
+  { label: 'Design', value: 'agtech' },
+  { label: 'Development', value: 'web-development' },
 ];
 
 export default function Projects() {
